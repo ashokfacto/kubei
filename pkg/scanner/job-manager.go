@@ -284,7 +284,7 @@ func (s *Scanner) createVulnerabilitiesScannerContainer(imageName, secretName st
 		Resources: corev1.ResourceRequirements{
 			Limits: corev1.ResourceList{
 				corev1.ResourceCPU:    resource.MustParse("1000m"),
-				corev1.ResourceMemory: resource.MustParse("1000Mi"),
+				corev1.ResourceMemory: resource.MustParse("3000Mi"),
 			},
 			Requests: corev1.ResourceList{
 				corev1.ResourceCPU:    resource.MustParse("50m"),
